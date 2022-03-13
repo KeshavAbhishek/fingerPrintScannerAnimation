@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mainFrame{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+i::before{
+    font-size: 184px;
+}
+
+#WC{
+    position: absolute;
+    top: 6px;
+    left: 7.6px;
+}
+#WOC{
+    position: absolute;
+    top: 8px;
+    left: 7.6px;
+}
+
+.fingerPrintIcon{
+    position: absolute;
+    left: 3%;
+}
+
+@keyframes heightManager {
+    0%,100%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+    }
+}
+
+#scannerDown{
+    position: absolute;
+    top: 2.4px;
+    overflow: hidden;
+    height: 0%;
+    width: 100%;
+    animation: heightManager 2.5s infinite;
+}
+
+@keyframes topOffSet {
+    0%,100%{
+        top: 0%;
+    }
+    50%{
+        top: 100%;
+    }
+}
+
+#line{
+    width: 100%;
+    height: 5px;
+    background: aqua;
+    position: absolute;
+    top: 0;
+    animation: topOffSet 2.5s infinite;
+}
