@@ -28,6 +28,10 @@
     animation-play-state: paused;
 }
 
+#mainFrame:hover #scannerDown{
+    animation-play-state: paused;
+}
+
 i::before{
     font-size: 184px;
 }
