@@ -24,6 +24,10 @@
     justify-content: center;
 }
 
+#mainFrame:hover{
+    animation-play-state: paused;
+}
+
 i::before{
     font-size: 184px;
 }
