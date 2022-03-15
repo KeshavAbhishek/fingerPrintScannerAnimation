@@ -24,7 +24,7 @@
     justify-content: center;
 }
 
-#mainFrame:hover #line,#scannerDown{
+#mainFrame:hover #line{
     animation-play-state: paused;
 }
 
